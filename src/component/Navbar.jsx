@@ -26,7 +26,7 @@ export default function Navbar() {
   return (
     <Disclosure
       as="nav"
-      className="bg-gray-800 sm:bg-opacity-0 absolute w-full sm:px-20 sm:py-8"
+      className="bg-gray-800 sm:bg-opacity-0 absolute w-full sm:px-20 sm:py-8 "
     >
       {({ open }) => (
         <>
@@ -54,7 +54,7 @@ export default function Navbar() {
                   />
                 </div>
                 <div className="hidden sm:block items-center ">
-                  <div className=" space-x-8  text-white  xl:absolute xl:right-1/2 xl:translate-x-1/2">
+                  <div className=" space-x-8 lg:space-x-2  text-white  xl:absolute xl:right-1/2 xl:translate-x-1/2">
                     {/* desktop Nav */}
                     {navigation.map((item) => (
                       <NavLink
