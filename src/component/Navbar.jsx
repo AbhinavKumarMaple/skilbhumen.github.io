@@ -26,7 +26,7 @@ export default function Navbar() {
   return (
     <Disclosure
       as="nav"
-      className="bg-gray-800 sm:bg-opacity-0 absolute w-full sm:px-20 sm:py-8 "
+      className="bg-gray-800 sm:bg-opacity-0 absolute w-full sm:px-20 sm:py-8"
     >
       {({ open }) => (
         <>
@@ -53,8 +53,8 @@ export default function Navbar() {
                     aria-hidden="true"
                   />
                 </div>
-                <div className="hidden sm:block items-center ">
-                  <div className=" space-x-8 lg:space-x-2  text-white  xl:absolute xl:right-1/2 xl:translate-x-1/2">
+                <div className="hidden sm:block   lg:mx-14">
+                  <div className="flex items-center  sm:justify-center  space-x-8 sm:space-x-0 lg:space-x-0 text-center  text-white  xl:absolute xl:right-1/2 xl:translate-x-1/2">
                     {/* desktop Nav */}
                     {navigation.map((item) => (
                       <NavLink
@@ -62,8 +62,8 @@ export default function Navbar() {
                         key={item.name}
                         className={({ isActive }) =>
                           isActive
-                            ? "xl:text-2xl sm:text-md  sm:font-bold xl:font-bold"
-                            : "xl:text-2xl sm:text-md sm:font-light xl:font-light xl:p-2"
+                            ? "xl:text-2xl  sm:text-xl sm:px-4  sm:font-bold xl:font-bold"
+                            : "xl:text-2xl  sm:text-xl flex flex-shrink-0  sm:font-light xl:font-light xl:p-2"
                         }
                       >
                         {item.name}
