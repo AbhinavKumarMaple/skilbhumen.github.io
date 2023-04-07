@@ -61,7 +61,7 @@ export default function Navbar() {
                         key={item.name}
                         className={({ isActive }) =>
                           isActive
-                            ? "xl:text-2xl  sm:text-xl sm:px-4  sm:font-bold xl:font-bold"
+                            ? "xl:text-2xl  sm:text-xl flex flex-shrink-0  sm:px-4  sm:font-bold xl:font-bold"
                             : "xl:text-2xl  sm:text-xl flex flex-shrink-0  sm:font-light xl:font-light xl:p-2"
                         }
                       >
